@@ -1,0 +1,43 @@
+color-summary[swatch="primary"] { --swatch-color: var(--color-primary); }
+color-summary[swatch="secondary"] { --swatch-color: var(--color-secondary); }
+color-summary[swatch="accent"] { --swatch-color: var(--color-accent); }
+color-summary[swatch="dark"] { --swatch-color: var(--color-dark); }
+color-summary[swatch="neutral"] { --swatch-color: var(--color-neutral); }
+color-summary[swatch="light"] { --swatch-color: var(--color-light); }
+
+
+color-summary[swatch="red"] { --swatch-color: var(--color-red); }
+color-summary[swatch="orange"] { --swatch-color: var(--color-orange); }
+color-summary[swatch="yellow"] { --swatch-color: var(--color-yellow); }
+color-summary[swatch="green"] { --swatch-color: var(--color-green); }
+color-summary[swatch="blue"] { --swatch-color: var(--color-blue); }
+color-summary[swatch="indigo"] { --swatch-color: var(--color-indigo); }
+color-summary[swatch="violet"] { --swatch-color: var(--color-violet); }
+color-summary[swatch="black"] { --swatch-color: var(--color-black); }
+color-summary[swatch="gray"] { --swatch-color: var(--color-gray); }
+color-summary[swatch="white"] { --swatch-color: var(--color-white); }
+
+color-summary[dark] > p:before{
+    filter: brightness(.75);
+}
+color-summary[light] > p:before{
+    filter: brightness(1.25);
+}
+color-summary > p:before{
+    content: " ";
+    min-width: 30px;
+    min-height: 30px;
+    position: absolute;
+    margin-left: -40px;
+    background: var(--swatch-color, 0);
+    border: 1px solid rgba(0,0,0,.5);
+    border-radius: 0.5rem;
+}
+
+color-summary {/* border: 1px solid black; */display: block;margin-left: 30px;}
+color-summary > p {
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}

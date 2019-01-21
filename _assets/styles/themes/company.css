@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow');
+:root {
+    --global-font: 'Helvetica Neue', sans-serif;
+    --header-font: var(--global-font);
+    --content-font: var(--global-font);
+    --font-size: 16px;
+    --color-primary: #085ff7;
+    --color-secondary: #ff6600;
+    --color-tertiary: #666666;
+    --color-yellow: #ffb100;
+    --color-green: #008040;
+    --color-purple: #551a8b;
+    --color-violet: #cd29c0;
+    --color-blue: #0000cc;
+    --color-sky-blue: #99ccff;
+    --page-background: 0;
+    --container-background: 0;
+    --container-padding: 1vh 1vw;
+    --grid-column-width: 3vw;
+    --grid-column-height: 1vh;
+    --column-height: calc(var(--grid-column-height) / 2);
+    --column-width: calc(var(--grid-column-width) / 2);
+}
+
+section {display: flex; justify-content: space-evenly;}
+
+@media screen and (max-width: 640px) {
+    :root {
+        --font-size: 13px; 
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    section {display: block;max-width: 90vw; position: relative;}
+    section > :not(:first-child) { margin-top: var(--column-height); }
+
+}

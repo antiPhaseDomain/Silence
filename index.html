@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Example Design Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/_assets/styles/style.css" />
+    <script nomodule src="./node_modules/@babel/polyfill/dist/polyfill.min.js"></script>
+    <script nomodule src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js" charset="utf-8"></script>
+    <script nomodule src="https://unpkg.com/css-vars-ponyfill@1/dist/css-vars-ponyfill.min.js"></script>
+    <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.7.5/beautify-css.min.js"></script>
+
+    <script type="module" src="./_assets/scripts/.transpiled.js"></script>
+    <script nomodule defer await type="text/javascript" src="/_assets/scripts/.evergreen.js"></script>
+    <script nomodule>(function(){cssVars()})()</script>
+</head>
+<body>
+    <h1>Site Design Document</h1>
+    <h2>Fonts</h2>
+    <section with-border>
+        <h5>ZCOOL QingKe HuangYou</h5>
+        <p>Open Sans Condensed</p>
+    </section>
+    <h2 id="colors">Colors</h2>
+    <section columns="2">
+        <div color-palette>
+            <h3>Major Colors</h3>
+            <color-summary swatch="primary"><p>Primary</p></color-summary>
+            <color-summary swatch="secondary"><p>Secondary</p></color-summary>
+            <color-summary swatch="accent"><p>Accent</p></color-summary>
+            <color-summary swatch="dark"><p>Dark</p></color-summary>
+            <color-summary swatch="neutral"><p>Neutral</p></color-summary>
+            <color-summary swatch="light"><p>Light</p></color-summary>
+        </div>
+        <div color-palette>
+            <h3>Color Wheel</h3>
+            <color-summary swatch="red"><p>Red</p></color-summary>
+            <color-summary swatch="orange" light><p>Orange</p></color-summary>
+            <color-summary swatch="yellow"><p>Yellow</p></color-summary>
+            <color-summary swatch="green"><p>Green</p></color-summary>
+            <color-summary swatch="blue"><p>Blue</p></color-summary>
+            <color-summary swatch="indigo"><p>Indigo</p></color-summary>
+            <color-summary swatch="violet"><p>Violet</p></color-summary>
+            <color-summary swatch="white"><p>White</p></color-summary>
+            <color-summary swatch="gray"><p>Gray</p></color-summary>
+            <color-summary swatch="black"><p>Black</p></color-summary>
+        </color-palette>
+    </section>
+    <hr />
+    <h2>Elements</h2>
+    <h3>Headers</h3>
+    <section block with-border>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+    </section>
+    <h3>General</h3>
+    <section with-border>
+        <h3>Header 3</h3>
+            <ol>
+                <li>Ordered</li>
+                <li>List</li>
+            </ol>
+            
+            <p>Paragraph Element!</p>
+
+            <ul>
+                <li>Unordered</li>
+                <li>list</li>
+            </ul>
+
+            <details>
+                <summary>Details</summary>
+                <p><button id="dialog-preview">Press to Preview &lt;dialog&gt;&lt;/dialog&gt;</button></p>
+            </details>
+    </section>
+    <h2>Grid</h2>
+    <section with-border>
+        <h3>Single Column / No Columns</h3>
+        <section with-border>No Columns</section>
+        <h3>Two Columns</h3>
+        <section columns="2">
+            <div>First Column</div>
+            <div>Second Column</div>
+        </section>
+        <h3>Three Columns</h3>
+        <section columns="3">
+            <div>First Column</div>
+            <div>Second Column</div>
+            <div>Third Column</div>
+        </section>
+        <h3>Four Columns</h3>
+        <section columns="4">
+            <div>First Column</div>
+            <div>Second Column</div>
+            <div>Third Column</div>
+            <div>Fourth Column</div>
+        </section>
+        <h3>Five Columns (No borders / With exception)</h3>
+        <section columns="5" no-borders>
+            <div>First Column</div>
+            <div with-border>Second Column</div>
+            <div>Third Column</div>
+            <div>Fourth Column</div>
+            <div>Fifth Column</div>
+        </section>
+        <h3>Six Columns</h3>
+        <section columns="6">
+            <div>First Column</div>
+            <div>Second Column</div>
+            <div>Third Column</div>
+            <div>Fourth Column</div>
+            <div>Fifth Column</div>
+            <div>Sixth Column</div>
+        </section>
+        <h3>Seven Columns</h3>
+        <section columns="7">
+            <div>First Column</div>
+            <div>Second Column</div>
+            <div>Third Column</div>
+            <div>Fourth Column</div>
+            <div>Fifth Column</div>
+            <div>Sixth Column</div>
+            <div>Seventh Column</div>
+        </section>
+        <h3>Eight Columns</h3>
+        <section columns="8">
+            <div>First Column</div>
+            <div>Second Column</div>
+            <div>Third Column</div>
+            <div>Fourth Column</div>
+            <div>Fifth Column</div>
+            <div>Sixth Column</div>
+            <div>Seventh Column</div>
+            <div>Eighth Column</div>
+        </section>
+        <h3>Nine Columns</h3>
+        <section columns="9">
+            <div>First Column</div>
+            <div>Second Column</div>
+            <div>Third Column</div>
+            <div>Fourth Column</div>
+            <div>Fifth Column</div>
+            <div>Sixth Column</div>
+            <div>Seventh Column</div>
+            <div>Eighth Column</div>
+            <div>Ninth Column</div>
+        </section>
+        <h3>Ten Columns</h3>
+        <section columns="10">
+            <div>First Column</div>
+            <div>Second Column</div>
+            <div>Third Column</div>
+            <div>Fourth Column</div>
+            <div>Fifth Column</div>
+            <div>Sixth Column</div>
+            <div>Seventh Column</div>
+            <div>Eighth Column</div>
+            <div>Ninth Column</div>
+            <div>Tenth Column</div>
+        </section>
+        <h3>Eleven Columns</h3>
+        <section columns="11">
+            <div>First Column</div>
+            <div>Second Column</div>
+            <div>Third Column</div>
+            <div>Fourth Column</div>
+            <div>Fifth Column</div>
+            <div>Sixth Column</div>
+            <div>Seventh Column</div>
+            <div>Eighth Column</div>
+            <div>Ninth Column</div>
+            <div>Tenth Column</div>
+            <div>Eleventh Column</div>
+        </section>
+        <h3>Twelve Columns</h3>
+        <section columns="12" with-borders>
+            <div>First Column</div>
+            <div>Second Column</div>
+            <div>Third Column</div>
+            <div>Fourth Column</div>
+            <div>Fifth Column</div>
+            <div>Sixth Column</div>
+            <div>Seventh Column</div>
+            <div>Eighth Column</div>
+            <div>Ninth Column</div>
+            <div>Tenth Column</div>
+            <div>Eleventh Column</div>
+            <div>Twelveth Column</div>
+        </section>
+    </section>
+    <h2>Components</h2>
+    <section with-border>
+        <h3>Buttons</h3>
+        <button>Press me!</button>
+    </section>
+
+                
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "@dabelcher/kevinbaugh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "_transpile": "rollup _assets/scripts/main.js --file _assets/scripts/.transpiled.js --format umd --name 'design-language' --watch",
+    "_babel-it": "npx babel ./_assets/scripts/.transpiled.js --out-file ./_assets/scripts/.evergreen.js --presets=@babel/env",
+    "_evergreen": "npm run _babel-it && echo '.evergreen.js built for legacy/evergreen browsers' ",
+    "preview": "npm run preview:evergreen",
+    "preview:evergreen": "npm run _evergreen && http-server .",
+    "start": "npm run _transpile & http-server .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-arrow-functions": "^7.2.0",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.2.3",
+    "@webcomponents/webcomponentsjs": "^2.2.3",
+    "http-server": "^0.11.1",
+    "rollup": "^1.1.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-json": "^3.1.0"
+  }
+}
