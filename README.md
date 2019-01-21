@@ -2,6 +2,14 @@
 
 ## What is this?
 
+It's a Hybrid Design Document and Component Library.
+
+* Self [transpiles](https://github.com/loraxx753/design-doc-concept/blob/master/package.json#L7) on `npm start`
+* Serves babeled version/polyfills only to non-evergreen browsers
+* Other than the above two (which are only referenced in pacakage.json), this boilerplate has no dependencies.
+* Custom and fully reset CSS. 
+* Hopefully🤞, easy to understand.
+
 
 ## What do I do?
 
