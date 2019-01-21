@@ -5,7 +5,7 @@
 It's a cross between a Design Document and Component Library.
 
 * Self [transpiles](https://github.com/loraxx753/design-doc-concept/blob/master/package.json#L7) on `npm start`
-* Serves babeled version/polyfills only to non-evergreen browsers
+* Serves babeled version/polyfills only to legacy browsers.
 * Other than the above two (which are only referenced in pacakage.json), this boilerplate has no dependencies.
 * Custom and fully reset CSS (see the button at the bottom of the example). 
 * Hopefully🤞, easy to understand.
