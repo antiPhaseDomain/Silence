@@ -6,7 +6,7 @@
   "scripts": {
     "_transpile": "rollup _assets/scripts/main.js --file _assets/scripts/.transpiled.js --format umd --name 'design-language' --watch",
     "_babel-it": "npx babel ./_assets/scripts/.transpiled.js --out-file ./_assets/scripts/.evergreen.js --presets=@babel/env",
-    "_evergreen": "npm run _babel-it && echo '.evergreen.js built for legacy/evergreen browsers' ",
+    "_evergreen": "npm run _babel-it && echo '.evergreen.js built for legacy/non-evergreen browsers' ",
     "preview": "npm run preview:evergreen",
     "preview:evergreen": "npm run _evergreen && http-server .",
     "start": "npm run _transpile & http-server .",
