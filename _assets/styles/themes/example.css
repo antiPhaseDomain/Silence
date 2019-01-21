@@ -53,16 +53,4 @@
 @media screen and (max-width: 900px) {
     section {display: block;max-width: 90vw; position: relative;}
     section > :not(:first-child) { margin-top: var(--column-height); }
-
-}
-
-section[block] {
-    display: block;
-}
-
-
-h5::before {
-    content: "" attr(href) "";
-    font-family: ""attr(href) "";
-    margin: 1rem 0;
 }

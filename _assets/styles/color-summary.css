@@ -34,7 +34,7 @@ color-summary > p:before{
     border-radius: 0.5rem;
 }
 
-color-summary {/* border: 1px solid black; */display: block;margin-left: 30px;}
+color-summary {display: block;margin-left: 30px;}
 color-summary > p {
     margin-left: 30px;
     margin-top: 30px;

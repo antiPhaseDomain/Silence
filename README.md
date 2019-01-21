@@ -21,7 +21,7 @@ It's a cross between a Design Document and Component Library.
 ### Use This As A Boilerplate
 
 1. Clone the respository and change into the directory
-  * `git clone https://github.com/loraxx753/design-doc-concept.git && cd design-doc-concept`
+  * `git clone https://github.com/loraxx753/hybrid-design-doc.git && cd hybrid-design-doc`
 2. Install the dependencies used for transpiling and working on legacy browsers :
   * `npm i `
   * _NOTE_: These dependencies are only used in [package.json](https://github.com/loraxx753/hybrid-design-doc/blob/master/package.json). With a few minutes of effort (and no transpiling or legacy support), this step is optional.

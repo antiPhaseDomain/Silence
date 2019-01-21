@@ -1,24 +1,14 @@
 @import './theme.css';
-
+/* Those color swatches don't come easy. */
 @import './color-summary.css';
 
-feature-tests {
-    display: block;
-}
-
-[color="primary"] { color: var(--color-primary); }
-
-#colors { color: var(--color-primary); -webkit-animation: color-wheel 4s infinite;
-}
-
-#colors + section > div[block] { display: block; }
-
-
+/* Let's do some fancy color changing. */
+#colors { color: var(--color-primary); -webkit-animation: color-wheel 4s infinite; }
 @-webkit-keyframes color-wheel {
     0% { -webkit-filter: hue-rotate(0deg);}
     50% { -webkit-filter: hue-rotate(180deg); }
     100% { -webkit-filter: hue-rotate(360deg); }
-  }
+}
 
 
 
