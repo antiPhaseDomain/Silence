@@ -9,7 +9,7 @@ It's a cross between a Design Document and Component Library.
 * Other than the above two (which are only referenced in pacakage.json), this boilerplate has no dependencies.
 * Custom and fully reset CSS (see the button at the bottom of the example). 
 * Hopefully🤞, easy to understand.
-* _*STILL A WORK IN PROGRESS*_
+* _**STILL A WORK IN PROGRESS**_
 
 
 ## What do I do?
