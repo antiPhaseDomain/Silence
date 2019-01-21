@@ -2,22 +2,23 @@
 
 ## What is this?
 
-It's a Hybrid Design Document and Component Library.
+It's a cross between a Design Document and Component Library.
 
 * Self [transpiles](https://github.com/loraxx753/design-doc-concept/blob/master/package.json#L7) on `npm start`
 * Serves babeled version/polyfills only to non-evergreen browsers
 * Other than the above two (which are only referenced in pacakage.json), this boilerplate has no dependencies.
-* Custom and fully reset CSS. 
+* Custom and fully reset CSS (see the button at the bottom of the example). 
 * Hopefully🤞, easy to understand.
+* _*STILL A WORK IN PROGRESS*_
 
 
 ## What do I do?
 
-# Live Version
+## Live Version
 
-[See this code running live](http://design-doc.surge.sh/).
+[See this code running live](http://hybrid-design-doc.surge.sh/).
 
-# Use This As A Boilerplate
+### Use This As A Boilerplate
 
 1. Clone the respository and change into the directory
   * `git clone https://github.com/loraxx753/design-doc-concept.git && cd design-doc-concept`
