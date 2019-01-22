@@ -1,4 +1,4 @@
-# Hybrid Design Doc
+# Hybrid Design
 
 ## What is this?
 
