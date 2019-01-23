@@ -2,7 +2,7 @@
 @import './lib/polyfill.css';
 @import './lib/grid.css';
 @import './lib/base.css';
-@import '../styles/themes/example.css';
+@import './themes/example.css';
 
 
 :root {

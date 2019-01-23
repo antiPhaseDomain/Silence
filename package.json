@@ -9,7 +9,7 @@
     "_legacy": "npm run _babel-it && echo '.legacy.js built for legacy browsers' ",
     "preview": "npm run preview:legacy",
     "preview:legacy": "npm run _legacy && http-server .",
-    "start": "npm run _transpile & http-server .",
+    "start": "npm run _transpile & node ./server/start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

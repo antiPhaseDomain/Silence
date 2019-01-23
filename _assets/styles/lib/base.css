@@ -38,7 +38,7 @@
 
 html {background-color: var(--page-background, 0);}
 head > * {display: inherit;}
-head { display: none; }
+head, script { display: none; }
 body {
     font-family: var(--content-font);
     font-size: var(--content-size);
@@ -89,13 +89,19 @@ ul li { display: list-item;}
 
 [hidden] { display: none; }
 
-a { color: var(--link-color, var(--color-blue)); text-decoration: underline; cursor: pointer; }
+a { color: var(--link-color, var(--color-blue)); text-decoration: underline; }
 a:hover { cursor: pointer; }
 
 pre code { display: block; white-space: pre; }
 
 span { font-size: inherit; font-weight: inherit; }
-div, section {display: block;}
+div, section, article, aside {display: block;}
+summary:hover { cursor: pointer; }
+dialog[data-popup] { position: fixed;}
+dialog[data-popup]::backdrop {
+    background: var(--color-primary, black);
+    filter: opacity(50%);
+}
 
 
 hr {
@@ -110,3 +116,63 @@ hr {
     border-width: 1px;
     width: 38vw;
 }
+
+:target {
+    border: .1rem dashed var(--color-primary, #000);
+    border-radius: var(--border-radius, 5px);
+    margin: 1rem auto;
+}
+
+button {
+    border: 1px solid var(--color-gray);
+    border-radius: 10px;
+    padding: 1rem;
+}
+button:hover {
+    cursor: pointer;
+}
+
+button[data-primary] {
+    background: var(--color-primary, black);
+    color: var(--color-light, white);
+    font-weight: bold;
+}
+
+button[data-primary]:hover {
+    filter: brightness(105%);
+}
+
+button[data-primary]:active {
+    filter: brightness(93%);
+}
+
+
+button[data-secondary] {
+    background: var(--color-secondary, black);
+    color: var(--color-light, white);
+    font-weight: bold;
+}
+
+button[data-secondary]:hover {
+    filter: brightness(105%);
+}
+
+button[data-secondary]:active {
+    filter: brightness(93%);
+}
+
+
+button[data-accent] {
+    background: var(--color-accent, black);
+    color: var(--color-light, white);
+    font-weight: bold;
+}
+
+button[data-accent]:hover {
+    filter: brightness(105%);
+}
+
+button[data-accent]:active {
+    filter: brightness(93%);
+}
+

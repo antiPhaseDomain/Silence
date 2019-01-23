@@ -6,7 +6,8 @@
 // window.iterations = (maxIterations) => { return Array(maxIterations).fill(0).map((n,i) => i) }
 
 (async () => {
-    console.log("Want to see under the hood? Start with /_assets/scripts/main.js.", )
+    console.log("Want to see under the hood? Start with /_assets/scripts/main.js.")
+    console.log(`Operators are standing by.`)
     /* Only the basics for now! 
     const url = document.querySelector('input').value
     const jsonResponse = await fetch(url).then(r => r.json())
@@ -19,8 +20,6 @@
 
     document.querySelector('.dialog-button').addEventListener('click', (e) => { e.preventDefault(); document.querySelector('dialog').toggleAttribute('open') })
     */
-
-    document.querySelector('#dialog-preview').addEventListener('click', (e) => { e.preventDefault(); document.querySelector('dialog').toggleAttribute('open') })
-    document.querySelector('#dialog-popup-preview').addEventListener('click', (e) => { e.preventDefault(); document.querySelector('dialog[data-popup]').toggleAttribute('open') })
+   
 })();
 

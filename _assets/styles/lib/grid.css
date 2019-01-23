@@ -5,11 +5,15 @@
 }
 
 /* Setup Borders */
-section:not([no-borders]) > div, [with-border] {border: 1px solid gray;padding: 1rem;border-radius: 20px;}
+section:not([no-borders]) > div, [with-border] {border: 1px solid var(--color-gray); padding: 1rem;border-radius: 20px;}
 div[no-border], section[no-borders] > div:not([with-border]) { border: none; display: flex; align-items: center; justify-content: center;}
 
 /* Defaults for column wrapper */
-[columns] { display: grid; gap: 10px;}
+[columns] { display: grid; gap: 10px; margin: 10px; overflow-x: scroll; scroll-behavior: unset; }
+/* Use the below plus `display: -ms-grid;`, `-ms-grid-columns`, and `-ms-grid-column` in legacy browsers. */
+@supports (display: grid) {
+  [columns] { margin: initial; }
+}
 [columns][autofill] { max-width: var(--autofill-size, 400px); margin: 0 auto; }
 
 /* Different media sizes*/
@@ -41,8 +45,15 @@ div[no-border], section[no-borders] > div:not([with-border]) { border: none; dis
   [columns="10"] { grid-template-columns: repeat(10, var(--column-size, auto)); }
   [columns="11"] { grid-template-columns: repeat(11, var(--column-size, auto)); }
   [columns="12"] { grid-template-columns: repeat(12, var(--column-size, auto)); }
+  /* Example to expand on later */
+  [pushed="2"] { 
+    grid-column-start:2; 
+    margin-left: 4rem;
+  }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 }
+
+

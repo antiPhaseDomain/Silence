@@ -12,7 +12,9 @@
     <script nomodule src="https://unpkg.com/css-vars-ponyfill@1/dist/css-vars-ponyfill.min.js"></script>
     <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.7.5/beautify-css.min.js"></script>
     <!-- Transpiled from /_assets/scripts/main.js-->
-    <script type="module" src="./_assets/scripts/.transpiled.js"></script>
+    <script type="module" src="./_assets/scripts/main.js"></script>
+    <script type="module" src="./_assets/scripts/index.js"></script>
+
     <!-- Babeled version for legacy browsers -->
     <script nomodule defer await type="text/javascript" src="/_assets/scripts/.legacy.js"></script>
     <!-- Run the polyfills for legacy browsers -->
@@ -22,8 +24,8 @@
     <h1>Site Design Document</h1>
     <h2>Fonts</h2>
     <section with-border>
-        <h5>ZCOOL QingKe HuangYou</h5>
-        <p>Open Sans Condensed</p>
+        <h5>Helvetica Neue</h5>
+        <p>Helvetica Neue</p>
     </section>
     <h2 id="colors">Colors</h2>
     <section columns="2">
@@ -51,8 +53,7 @@
         </color-palette>
     </section>
     <hr />
-    <h2>Elements</h2>
-    <h3>Headers</h3>
+    <h2 id="headers">Headers</h2>
     <section block with-border>
             <h1>Heading 1</h1>
             <h2>Heading 2</h2>
@@ -61,7 +62,7 @@
             <h5>Heading 5</h5>
             <h6>Heading 6</h6>
     </section>
-    <h3>General</h3>
+    <h2 id="atoms">Atoms</h2>
     <section with-border>
         <h3>Header 3</h3>
             <ol>
@@ -85,7 +86,7 @@
 
             </details>
     </section>
-    <h2>Grid</h2>
+    <h2 id="grid">Grid</h2>
     <section with-border>
         <h3>Single Column / No Columns</h3>
         <section with-border>No Columns</section>
@@ -107,10 +108,10 @@
             <div>Third Column</div>
             <div>Fourth Column</div>
         </section>
-        <h3>Five Columns (No borders / With exception)</h3>
-        <section columns="5" no-borders>
+        <h3>Five Columns</h3>
+        <section columns="5">
             <div>First Column</div>
-            <div with-border>Second Column</div>
+            <div>Second Column</div>
             <div>Third Column</div>
             <div>Fourth Column</div>
             <div>Fifth Column</div>
@@ -200,10 +201,38 @@
             <div>Twelveth Column</div>
         </section>
     </section>
-    <h2>Components</h2>
+    <h3 id="grid-features">Grid Features</h3>
+    <aside with-border>
+        <h4>No Borders</h4>
+        <section columns="4" no-borders>
+            <div>First Column</div>
+            <div>Second Column</div>
+            <div>Third Column</div>
+            <div>Fourth Column</div>
+        </section>
+        <h3>Selective Border</h3>
+        <section columns="4" no-borders>
+            <div>First Column</div>
+            <div with-border>Second Column</div>
+            <div>Third Column</div>
+            <div>Fourth Column</div>
+        </section>
+        <h3>Pushing a Column Around</h3>
+        <section columns="4" no-borders>
+            <div with-border pushed="2">Second Column</div>
+            <div>Third Column</div>
+            <div>Fourth Column</div>
+        </section>
+
+    </aside>
+    
+    <h2 id="components">Components</h2>
     <section with-border>
-        <h3 id="#wip">Buttons</h3>
-        <button>Press me!</button>
+        <h3 id="components-button">Buttons</h3>
+        <button>Default!</button>
+        <button data-primary>Primary!</button>
+        <button data-secondary>Secondary!</button>
+        <button data-accent>Accent!</button>
     </section>
 
                 
