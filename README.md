@@ -2,10 +2,12 @@
 
 ## What is this?
 
-It's a cross between a Design Document and Component Library.
+An interactive design language, Component Library, and Component Generator.
 
+* ES6/7
+* async/await
 * Self [transpiles](https://github.com/loraxx753/design-doc-concept/blob/master/package.json#L7) on `npm start`
-* Serves babeled version/polyfills only to legacy browsers.
+* Serves babel & polyfills to [legacy browsers](https://stackoverflow.com/questions/45943494/what-s-the-purpose-of-the-html-nomodule-attribute-for-script-elements-if-the-d).
 * Dependencies are only referenced in the [package.json](https://github.com/loraxx753/hybrid-design-doc/blob/master/package.json#L7-L12) (removeable).
 * [Custom](https://github.com/loraxx753/hybrid-design-doc/blob/master/_assets/styles/lib/base.css), [fully reset](https://github.com/loraxx753/hybrid-design-doc/blob/master/_assets/styles/lib/reset.css), cross-browser CSS (see the button at the bottom of the example). 
 * Hopefully🤞, easy to understand.
