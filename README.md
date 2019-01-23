@@ -2,7 +2,7 @@
 
 ## What is this?
 
-An interactive design language creator. Includes vanilla javascript components, a component library and sandbox.
+An interactive [design language](https://link.medium.com/rJ3wBmDFIT) creator. Includes [vanilla javascript components](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements), a [component library](https://www.webcomponents.org/libraries) and sandbox.
 
 * ES6/7
 * async/await
