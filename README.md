@@ -2,7 +2,7 @@
 
 ## What is this?
 
-An interactive design language, Component Library, and Component Generator.
+An interactive design language creator. Includes vanilla javascript components, a component library and sandbox.
 
 * ES6/7
 * async/await
