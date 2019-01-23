@@ -52,39 +52,42 @@
             <color-summary swatch="black"><p>Black</p></color-summary>
         </color-palette>
     </section>
-    <hr />
     <h2 id="headers">Headers</h2>
     <section block with-border>
-            <h1>Heading 1</h1>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <h6>Heading 6</h6>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
     </section>
     <h2 id="atoms">Atoms</h2>
     <section with-border>
         <h3>Header 3</h3>
-            <ol>
-                <li>Ordered</li>
-                <li>List</li>
-            </ol>
+        <ol>
+            <li>Ordered</li>
+            <li>List</li>
+            <li>&lt;ol&gt;</li>
+        </ol>
+        
+        <p>&lt;paragraph&gt;!</p>
+        
+        <ul>
+            <li>Unordered</li>
+            <li>list</li>
+            <li>&lt;ul&gt;</li>
+        </ul>
+        
+        <details>
+            <summary>Details about &lt;dialog&gt;</summary>
+            <p><button id="dialog-preview">Press to toggle dialog preview</button></p>
+            <dialog>You Pressed it! Now &lt;dialog open&gt; is true.</dialog>
+            <p><button id="dialog-popup-preview">Press to toggle dialog preview with a custom "data-popup" attribute.</button></p></p>
+            <dialog data-popup>You Pressed it! Now &lt;dialog data-popup open&gt; is true.</dialog>
             
-            <p>Paragraph Element!</p>
-
-            <ul>
-                <li>Unordered</li>
-                <li>list</li>
-            </ul>
-
-            <details>
-                <summary>Details about &lt;dialog&gt;</summary>
-                <p><button id="dialog-preview">Press to toggle dialog preview</button></p>
-                <dialog>You Pressed it! Now &lt;dialog open&gt; is true.</dialog>
-                <p><button id="dialog-popup-preview">Press to toggle dialog preview with a custom "data-popup" attribute.</button></p></p>
-                <dialog data-popup>You Pressed it! Now &lt;dialog data-popup open&gt; is true.</dialog>
-
-            </details>
+        </details>
+        <h3>Horizontal Rule</h3>
+        <hr />
     </section>
     <h2 id="grid">Grid</h2>
     <section with-border>

@@ -126,24 +126,23 @@ hr {
 button {
     border: 1px solid var(--color-gray);
     border-radius: 10px;
-    padding: 1rem;
+    padding: .5rem;
+    background: var(--color-neutral);
+    color: var(--color-light, white);
+    font-weight: bold;
+
 }
 button:hover {
     cursor: pointer;
+    filter: brightness(105%);
+}
+
+button:active {
+    filter: brightness(93%);
 }
 
 button[data-primary] {
     background: var(--color-primary, black);
-    color: var(--color-light, white);
-    font-weight: bold;
-}
-
-button[data-primary]:hover {
-    filter: brightness(105%);
-}
-
-button[data-primary]:active {
-    filter: brightness(93%);
 }
 
 
