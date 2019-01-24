@@ -31,7 +31,7 @@ async function server(port) {
                 fs.readFile(filePath, function(error, content) {
                     const extname = String(path.extname(filePath)).toLowerCase();
                     const contentType = mimeTypes[extname] || 'application/octet-stream';
-                    const whitelist = [ '/something' ] //[ 'allow-all' ]
+                    const whitelist = [ 'allow-all' ] //[ 'allow-all' ]
                     if (error) {
                         if(error.code == 'ENOENT') {
                             if(whitelist.includes(url.pathname) || (whitelist.length == 1 && whitelist[0] == 'allow-all')) {

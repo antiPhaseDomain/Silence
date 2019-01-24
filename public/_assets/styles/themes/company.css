@@ -10,7 +10,6 @@ h5 { color: var(--color-secondary, 0);}
     --color-dark: var(--color-black);
     --color-neutral: var(--color-gray);
     --color-light: var(--color-white);
-    
     --color-primary: #085ff7;
     --color-orange: #ff6600;
     --color-secondary: var(--color-orange);

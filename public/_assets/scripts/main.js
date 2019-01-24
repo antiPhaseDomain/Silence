@@ -20,7 +20,7 @@
 
     document.querySelector('.dialog-button').addEventListener('click', (e) => { e.preventDefault(); document.querySelector('dialog').toggleAttribute('open') })
     */
-   updateTheme('company')
+//    updateTheme('company')
 })();
 
 function updateTheme(themeName ='example') {

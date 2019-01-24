@@ -7,6 +7,7 @@
     "_transpile": "rollup public/_assets/scripts/main.js --file public/_assets/scripts/.transpiled.js --format umd --name 'design-language' --watch",
     "_babel-it": "npx babel ./public/_assets/scripts/.transpiled.js --out-file ./public/_assets/scripts/.legacy.js --presets=@babel/env",
     "_legacy": "npm run _babel-it && echo '.legacy.js built for legacy browsers' ",
+    "deploy": "surge ./public",
     "preview": "npm run preview:legacy",
     "preview:legacy": "npm run _legacy && http-server ./public",
     "start": "npm run _transpile & node ./server/start.js",
@@ -26,6 +27,7 @@
     "http-server": "^0.11.1",
     "rollup": "^1.1.0",
     "rollup-plugin-commonjs": "^9.2.0",
-    "rollup-plugin-json": "^3.1.0"
+    "rollup-plugin-json": "^3.1.0",
+    "surge": "^0.20.1"
   }
 }
