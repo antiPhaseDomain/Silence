@@ -15,12 +15,12 @@ async function server(port) {
     // http.createServer() is one of node's default features (3)
     http.createServer(async (request, response) => {
         const url = parser.parse(request.url)
-        var filePath = './' + url.pathname;
+        var filePath = './public/' + url.pathname;
 
         switch (url.pathname) {
             case '/':
                 // Same with this. instead of a callback function, await makes it return the value.
-                fs.readFile(`./index.html`, function(err, content) {
+                fs.readFile(`./public/index.html`, function(err, content) {
                     response.writeHead(200, { 'Content-Type': 'text/html' });
                     response.end(content, 'utf-8');
                 })
@@ -31,25 +31,20 @@ async function server(port) {
                 fs.readFile(filePath, function(error, content) {
                     const extname = String(path.extname(filePath)).toLowerCase();
                     const contentType = mimeTypes[extname] || 'application/octet-stream';
-
+                    const whitelist = [ '/something' ] //[ 'allow-all' ]
                     if (error) {
                         if(error.code == 'ENOENT') {
-                            switch(url.pathname) {
-                                case '/test/features':
-                                case '/features':
-                                case '/test/components':
-                                case '/components':
-                                    fs.readFile(`./200.html`, function(err, content) {
-                                        response.writeHead(200, { 'Content-Type': 'text/html' });
-                                        response.end(content, 'utf-8');
-                                    })
-
-                                    break;
-                                default:
-                                    fs.readFile('./404.html', function(error, content) {
-                                        response.writeHead(200, { 'Content-Type': contentType });
-                                        response.end(content, 'utf-8');
-                                    });
+                            if(whitelist.includes(url.pathname) || (whitelist.length == 1 && whitelist[0] == 'allow-all')) {
+                                fs.readFile(`./public/200.html`, function(err, content) {
+                                    response.writeHead(200, { 'Content-Type': 'text/html' });
+                                    response.end(content, 'utf-8');
+                                })
+                            }
+                            else {
+                                fs.readFile('./public/404.html', function(error, content) {
+                                    response.writeHead(200, { 'Content-Type': 'text/html' });
+                                    response.end(content, 'utf-8');
+                                });
                             }
                         }
                         else {

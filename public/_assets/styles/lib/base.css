@@ -143,6 +143,7 @@ button:active {
 
 button[data-primary] {
     background: var(--color-primary, black);
+    color: var(--color-light, white);
 }
 
 

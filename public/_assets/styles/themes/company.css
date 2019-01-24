@@ -39,3 +39,8 @@ h5 { color: var(--color-secondary, 0);}
         --font-size: 13px; 
     }
 }
+
+
+button, button[data-primary], button[data-secondary], button[data-accent] {
+    font-weight: initial;
+}

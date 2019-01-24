@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "_transpile": "rollup _assets/scripts/main.js --file _assets/scripts/.transpiled.js --format umd --name 'design-language' --watch",
-    "_babel-it": "npx babel ./_assets/scripts/.transpiled.js --out-file ./_assets/scripts/.legacy.js --presets=@babel/env",
+    "_transpile": "rollup public/_assets/scripts/main.js --file public/_assets/scripts/.transpiled.js --format umd --name 'design-language' --watch",
+    "_babel-it": "npx babel ./public/_assets/scripts/.transpiled.js --out-file ./public/_assets/scripts/.legacy.js --presets=@babel/env",
     "_legacy": "npm run _babel-it && echo '.legacy.js built for legacy browsers' ",
     "preview": "npm run preview:legacy",
-    "preview:legacy": "npm run _legacy && http-server .",
+    "preview:legacy": "npm run _legacy && http-server ./public",
     "start": "npm run _transpile & node ./server/start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
