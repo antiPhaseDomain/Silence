@@ -25,7 +25,17 @@
 
         document.querySelector('.dialog-button').addEventListener('click', (e) => { e.preventDefault(); document.querySelector('dialog').toggleAttribute('open') })
         */
-    //    updateTheme('company')
+
+    //    updateTheme('indeed')
     })();
+
+    window.updateTheme = function updateTheme(themeName ='example') {
+        const link = document.createElement('link');
+        link.href = `/_assets/styles/themes/${themeName}.css`;
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.media = 'screen';
+        document.querySelector('head').appendChild(link);
+    };
 
 }));

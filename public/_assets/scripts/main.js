@@ -20,10 +20,11 @@
 
     document.querySelector('.dialog-button').addEventListener('click', (e) => { e.preventDefault(); document.querySelector('dialog').toggleAttribute('open') })
     */
-//    updateTheme('company')
+
+//    updateTheme('indeed')
 })();
 
-function updateTheme(themeName ='example') {
+window.updateTheme = function updateTheme(themeName ='example') {
     const link = document.createElement('link')
     link.href = `/_assets/styles/themes/${themeName}.css`
     link.rel = 'stylesheet'
