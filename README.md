@@ -17,11 +17,11 @@ An interactive [design language](https://link.medium.com/rJ3wBmDFIT) editor. Inc
 
 ## What do I do?
 
-## Live Version
+### Demo The Live Version
 
 [See this code running live](http://hybrid-design-doc.surge.sh/).
 
-## Use Project As A Boilerplate
+### Use As A Boilerplate
 
 1. Clone the respository and change into the directory
   * `git clone https://github.com/loraxx753/hybrid-design-doc.git && cd hybrid-design-doc`
@@ -30,7 +30,7 @@ An interactive [design language](https://link.medium.com/rJ3wBmDFIT) editor. Inc
   * _NOTE_: These dependencies are only used in [package.json](https://github.com/loraxx753/hybrid-design-doc/blob/master/package.json). With a few minutes of effort (and no transpiling or legacy support), this step is optional.
 3. Run `npm start` and visit [127.0.0.1:8080/](http://127.0.0.1:8080/)
 
-# Deploy Your Project
+### Deploy Your Project
 
 * Go to the file called [CNAME](https://github.com/loraxx753/hybrid-design/blob/master/public/CNAME) and replace the lines there with `whatever-name-you-want.surge.sh`.
 * Type `npm run deploy` and press enter.
