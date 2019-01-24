@@ -6,9 +6,10 @@ An interactive [design language](https://link.medium.com/rJ3wBmDFIT) editor. Inc
 
 * ES6/7
 * async/await
-* Self [transpiles](https://github.com/loraxx753/design-doc-concept/blob/master/package.json#L7) on `npm start`
-* Serves babel & polyfills to [legacy browsers](https://stackoverflow.com/questions/45943494/what-s-the-purpose-of-the-html-nomodule-attribute-for-script-elements-if-the-d).
-* Dependencies are only referenced in the [package.json](https://github.com/loraxx753/hybrid-design-doc/blob/master/package.json#L7-L12) (removeable).
+* (optional) Watches and [transpiles](https://github.com/loraxx753/design-doc-concept/blob/master/package.json#L7) on `npm start`
+* (optional) Serves babel & polyfills to [legacy browsers](https://stackoverflow.com/questions/45943494/what-s-the-purpose-of-the-html-nomodule-attribute-for-script-elements-if-the-d).
+* (optional) Deploy to production/staging/QA with [surge.sh](https://surge.sh/)
+* (removeable) Dependencies only used in [package.json](https://github.com/loraxx753/hybrid-design-doc/blob/master/package.json#L7-L12).
 * [Custom](https://github.com/loraxx753/hybrid-design-doc/blob/master/_assets/styles/lib/base.css), [fully reset](https://github.com/loraxx753/hybrid-design-doc/blob/master/_assets/styles/lib/reset.css), cross-browser CSS (see the button at the bottom of the example). 
 * Hopefully🤞, easy to understand.
 * _**STILL A WORK IN PROGRESS**_
@@ -20,7 +21,7 @@ An interactive [design language](https://link.medium.com/rJ3wBmDFIT) editor. Inc
 
 [See this code running live](http://hybrid-design-doc.surge.sh/).
 
-### Use This As A Boilerplate
+## Use Project As A Boilerplate
 
 1. Clone the respository and change into the directory
   * `git clone https://github.com/loraxx753/hybrid-design-doc.git && cd hybrid-design-doc`
@@ -28,3 +29,9 @@ An interactive [design language](https://link.medium.com/rJ3wBmDFIT) editor. Inc
   * `npm i `
   * _NOTE_: These dependencies are only used in [package.json](https://github.com/loraxx753/hybrid-design-doc/blob/master/package.json). With a few minutes of effort (and no transpiling or legacy support), this step is optional.
 3. Run `npm start` and visit [127.0.0.1:8080/](http://127.0.0.1:8080/)
+
+# Deploy Your Project
+
+* Go to the file called [CNAME](https://github.com/loraxx753/hybrid-design/blob/master/public/CNAME) and replace the lines there with `whatever-name-you-want.surge.sh`.
+* Type `npm run deploy` and press enter.
+* Visit your project url: https://whatever-name-you-want.surge.sh
