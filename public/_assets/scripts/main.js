@@ -1,6 +1,7 @@
 // This should be a dynamic import. "If a legacy browser, import the polyfills."
 // Might be wonky in the transpiler....
 // import './polyfills.js'
+import { fontReplace } from '../../_index/main.js'
 
 /* Only the basics for now! */
 // window.iterations = (maxIterations) => { return Array(maxIterations).fill(0).map((n,i) => i) }
@@ -12,6 +13,7 @@ window.updateTheme = function updateTheme(themeName ='example') {
     link.type = 'text/css'
     link.media = 'screen'
     document.querySelector('head').appendChild(link)
+    fontReplace()
 };
 
 
