@@ -10,6 +10,16 @@
     /* Only the basics for now! */
     // window.iterations = (maxIterations) => { return Array(maxIterations).fill(0).map((n,i) => i) }
 
+    window.updateTheme = function updateTheme(themeName ='example') {
+        const link = document.createElement('link');
+        link.href = `/_assets/styles/themes/${themeName}.css`;
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.media = 'screen';
+        document.querySelector('head').appendChild(link);
+    };
+
+
     (async () => {
         console.log("Want to see under the hood? Start with /_assets/scripts/main.js.");
         console.log(`Operators are standing by.`);
@@ -26,16 +36,7 @@
         document.querySelector('.dialog-button').addEventListener('click', (e) => { e.preventDefault(); document.querySelector('dialog').toggleAttribute('open') })
         */
 
-    //    updateTheme('indeed')
+    //    window.updnpateTheme('indeed')
     })();
-
-    window.updateTheme = function updateTheme(themeName ='example') {
-        const link = document.createElement('link');
-        link.href = `/_assets/styles/themes/${themeName}.css`;
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.media = 'screen';
-        document.querySelector('head').appendChild(link);
-    };
 
 }));
