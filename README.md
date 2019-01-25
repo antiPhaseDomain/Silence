@@ -17,7 +17,7 @@ An interactive [design language](https://link.medium.com/rJ3wBmDFIT) editor. Inc
 
 ## What do I do?
 
-[See this code running live](http://hybrid-design-doc.surge.sh/).
+[See this code running live](http://silence.surge.sh/).
 
 ## Use As A Boilerplate
 
