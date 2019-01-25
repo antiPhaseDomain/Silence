@@ -1,4 +1,4 @@
-# Hybrid Design
+# Silence
 
 ## What is this?
 
@@ -10,14 +10,14 @@ An interactive [design language](https://link.medium.com/rJ3wBmDFIT) editor. Inc
 * (optional) Serves babel & polyfills to [legacy browsers](https://stackoverflow.com/questions/45943494/what-s-the-purpose-of-the-html-nomodule-attribute-for-script-elements-if-the-d).
 * (optional) Deploy to production/staging/QA with [surge.sh](https://surge.sh/)
 * Dependencies only used in [package.json](https://github.com/loraxx753/hybrid-design-doc/blob/master/package.json#L7-L12).
-* [Custom](https://github.com/loraxx753/hybrid-design-doc/blob/master/_assets/styles/lib/base.css), [fully reset](https://github.com/loraxx753/hybrid-design-doc/blob/master/_assets/styles/lib/reset.css), cross-browser CSS (see the button at the bottom of the example). 
+* [Custom](https://github.com/loraxx753/hybrid-design-doc/blob/master/_assets/styles/lib/base.css), [fully reset](https://github.com/loraxx753/hybrid-design-doc/blob/master/_assets/styles/lib/reset.css), cross-browser CSS. 
 * Hopefully🤞, easy to understand.
 * _**STILL A WORK IN PROGRESS**_
 
 
 ## What do I do?
 
-[See this code running live](http://hybrid-design-doc.surge.sh/).
+[See this code running live](http://silence.surge.sh/).
 
 ## Use As A Boilerplate
 
