@@ -5,9 +5,9 @@
 An interactive [design language](https://link.medium.com/rJ3wBmDFIT) editor. Includes [vanilla javascript components](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements), a [component library](https://www.webcomponents.org/libraries) and sandbox.
 
 * ES6/7
-* async/await
+* [async/await](https://link.medium.com/G2t27I3dM)
 * (optional) Watches and [transpiles](https://github.com/loraxx753/design-doc-concept/blob/master/package.json#L7) on `npm start`
-* (optional) Serves babel & polyfills to [legacy browsers](https://stackoverflow.com/questions/45943494/what-s-the-purpose-of-the-html-nomodule-attribute-for-script-elements-if-the-d).
+* (optional) Serves [babel](https://babeljs.io/docs/en/) & [polyfills](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill) to [legacy browsers](https://stackoverflow.com/questions/45943494/what-s-the-purpose-of-the-html-nomodule-attribute-for-script-elements-if-the-d).
 * (optional) Deploy to production/staging/QA with [surge.sh](https://surge.sh/)
 * Dependencies only used in [package.json](https://github.com/loraxx753/hybrid-design-doc/blob/master/package.json#L7-L12).
 * [Custom](https://github.com/loraxx753/hybrid-design-doc/blob/master/_assets/styles/lib/base.css), [fully reset](https://github.com/loraxx753/hybrid-design-doc/blob/master/_assets/styles/lib/reset.css), cross-browser CSS. 
