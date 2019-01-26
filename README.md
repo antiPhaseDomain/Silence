@@ -33,7 +33,7 @@ An interactive [design language](https://link.medium.com/rJ3wBmDFIT) editor and 
 
 ## Deploy Your Project
 
-* Install `surge.sh` globally `npm i -g surge` or as a dev-dependency `npm i --save-dev surge`.
+* Install [surge.sh|https://surge.sh]` globally `npm i -g surge` or as a dev-dependency `npm i --save-dev surge`.
 * Change the [CNAME](https://github.com/loraxx753/hybrid-design/blob/master/public/CNAME) file to `whatever-name-you-want.surge.sh`.
 * Type `npm run deploy` and press enter.
 * Visit your project url: https://whatever-name-you-want.surge.sh
