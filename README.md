@@ -2,7 +2,9 @@
 
 ## What is this?
 
-An interactive [design language](https://link.medium.com/rJ3wBmDFIT) editor. Includes [vanilla javascript components](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements), a [component library](https://www.webcomponents.org/libraries) and sandbox.
+An interactive [design language](https://link.medium.com/rJ3wBmDFIT) editor and app creator. Includes [Custom Elements v1](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements), a [component library](https://www.webcomponents.org/libraries) and [coding sandbox](https://en.wikipedia.org/wiki/Sandbox_(software_development)).
+
+### Other Things Used
 
 * [ES6/7](https://codeburst.io/javascript-wtf-is-es6-es8-es-2017-ecmascript-dca859e4821c)
 * [async/await](https://link.medium.com/G2t27I3dM)
