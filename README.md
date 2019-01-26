@@ -13,8 +13,8 @@ An interactive [design language](https://link.medium.com/rJ3wBmDFIT) editor and 
 
 * (optional) [Transpiles](https://github.com/loraxx753/design-doc-concept/blob/master/package.json#L7) with [babel](https://babeljs.io/docs/en/) & [polyfills](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill) served to [legacy browsers](https://stackoverflow.com/questions/45943494/what-s-the-purpose-of-the-html-nomodule-attribute-for-script-elements-if-the-d).
 * (optional) Deploy to production/staging/QA with [surge.sh](https://surge.sh/)
-* All dependencies are solely used in [package.json](https://github.com/loraxx753/hybrid-design-doc/blob/master/package.json#L7-L12).
-* [Custom](https://github.comt/loraxx753/hybrid-design-doc/blob/master/_assets/styles/lib/base.css), [fully reset](https://github.com/loraxx753/hybrid-design-doc/blob/master/_assets/styles/lib/reset.css), cross-browser CSS. 
+* All dependencies are solely used in [package.json](https://github.com/antiPhaseDomain/Silence/blob/master/package.json#L7-L12).
+* [Custom](https://github.comt/antiPhaseDomain/Silence/blob/master/_assets/styles/lib/base.css), [fully reset](https://github.com/antiPhaseDomain/Silence/blob/master/_assets/styles/lib/reset.css), cross-browser CSS. 
 * Hopefully🤞, easy to understand.
 * _**STILL A WORK IN PROGRESS**_
 
@@ -24,16 +24,15 @@ An interactive [design language](https://link.medium.com/rJ3wBmDFIT) editor and 
 [See this code running live](http://silence.surge.sh/).
 
 ## Use As A Boilerplate
-
 1. Clone the respository and change into the directory
-  * `git clone https://github.com/loraxx753/hybrid-design-doc.git && cd hybrid-design-doc`
+  * `git clone https://github.com/antiPhaseDomain/Silence.git && cd Silence`
 2. Install the dependencies used for transpiling and working on legacy browsers
   * `npm i `
 3. Run `npm start` and visit [127.0.0.1:8080/](http://127.0.0.1:8080/)
 
 ## Deploy Your Project
 
-* Install [surge.sh](https://surge.sh)` globally `npm i -g surge` or as a dev-dependency `npm i --save-dev surge`.
+* Install [surge.sh](https://surge.sh) globally `npm i -g surge` or as a dev-dependency `npm i --save-dev surge`.
 * Change the [CNAME](https://github.com/loraxx753/hybrid-design/blob/master/public/CNAME) file to `whatever-name-you-want.surge.sh`.
 * Type `npm run deploy` and press enter.
 * Visit your project url: https://whatever-name-you-want.surge.sh
