@@ -39,7 +39,7 @@ An interactive [design language](https://link.medium.com/rJ3wBmDFIT) editor and 
 
 ### What About A Custom Domain?
 
-* _[Adding a custom domain](https://surge.sh/help/adding-a-custom-domain)_ by [Surge](https://surge.sh/help/chat)!
+_[Adding a custom domain](https://surge.sh/help/adding-a-custom-domain)_ by [Surge](https://surge.sh/help/chat)!
 
 ### Who Has Password Protection?
 
