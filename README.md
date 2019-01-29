@@ -9,8 +9,6 @@ An interactive [design language](https://link.medium.com/rJ3wBmDFIT) editor and 
 * [ES6/7](https://codeburst.io/javascript-wtf-is-es6-es8-es-2017-ecmascript-dca859e4821c)
 * [async/await](https://link.medium.com/G2t27I3dM)
 * (optional) Watches and bundles source code with [rollup.js](https://scotch.io/tutorials/javascript-transpilers-what-they-are-why-we-need-them)
-
-
 * (optional) [Transpiles](https://github.com/loraxx753/design-doc-concept/blob/master/package.json#L7) with [babel](https://babeljs.io/docs/en/) & [polyfills](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill) served to [legacy browsers](https://stackoverflow.com/questions/45943494/what-s-the-purpose-of-the-html-nomodule-attribute-for-script-elements-if-the-d).
 * (optional) Deploy to production/staging/QA with [surge.sh](https://surge.sh/)
 * All dependencies are solely used in [package.json](https://github.com/antiPhaseDomain/Silence/blob/master/package.json#L7-L12).
